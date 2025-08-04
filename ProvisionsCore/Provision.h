@@ -1,8 +1,11 @@
-#include "Itf/ProvisionItf.h"
+#include <compare>
+
+#include "Itf/ProvisionGetterItf.h"
+#include "Itf/ProvisionSetterItf.h"
 
 namespace ProvisionsCore
 {
-    class Provision: public ProvisionItf
+    class Provision: public ProvisionsCoreItf::ProvisionGetterItf, ProvisionsCoreItf::ProvisionSetterItf
     {
     public:
         [[nodiscard]]
