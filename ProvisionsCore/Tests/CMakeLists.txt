@@ -1,4 +1,4 @@
-add_executable(TestProvisionsCore ProvisionTest.cpp)
+add_executable(TestProvisionsCore ProvisionTest.cpp ProvisionsTest.cpp)
 
 target_link_libraries(TestProvisionsCore PRIVATE ProvisionsCore Catch2::Catch2WithMain)
 

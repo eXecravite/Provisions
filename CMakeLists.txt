@@ -15,7 +15,7 @@ FetchContent_MakeAvailable(catch)
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
 include(Catch)
 
-set (CMAKE_CXX_STANDARD 20)
+set (CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_CLANG_TIDY
   clang-tidy;
   -warnings-as-errors=*;)
